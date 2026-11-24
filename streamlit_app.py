@@ -1,4 +1,5 @@
 import logging
+import os
 
 import pandas as pd
 import streamlit as st
@@ -71,6 +72,8 @@ st.set_page_config(
     page_title="Pharmacy Pathfinder",
     layout="wide"
 )
+
+base_dir = os.path.dirname(__file__)
 
 st.title("Pharmacy Pathfinder")
 
