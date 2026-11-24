@@ -95,7 +95,7 @@ st.dataframe(
 st.set_page_config(layout="wide")
 
 # ── UI ────────────────────────────────────────────────────────────────────────
-base_dir = os.path.dirname(__file__)
+
 
 st.image(os.path.join(base_dir, "content", "OpenPrescribing.svg"))
 
