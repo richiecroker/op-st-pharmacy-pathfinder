@@ -90,3 +90,22 @@ st.dataframe(
     hide_index=True,
     use_container_width=True
 )
+
+
+st.set_page_config(layout="wide")
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+base_dir = os.path.dirname(__file__)
+
+st.image(os.path.join(base_dir, "content", "OpenPrescribing.svg"))
+
+st.info(
+    """##### Hello!  This is a **very** early prototype of analysing prescribing at community pharmacy pathfinder sites.  
+Please let us know what you think, and what you'd like to see.  Email us at [bennett@phc.ox.ac.uk](mailto:bennett@phc.ox.ac.uk)"""
+)
+
+st.title("Community Pharmacy pathfinder prescribing viewer")
+
+with st.expander("Click here to read our methodology", icon=":material/quick_reference:"):
+    with open(os.path.join(base_dir, "content", "methodology.md")) as f:
+        st.markdown(f.read())
