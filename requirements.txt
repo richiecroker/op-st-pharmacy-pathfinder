@@ -1,10 +1,7 @@
-streamlit
-duckdb
 google-cloud-bigquery
-google-cloud-storage
-pyarrow
-pandas
-plotly
-db-dtypes
 google-cloud-bigquery-storage
-pyyaml
+google-auth
+db-dtypes
+pandas
+streamlit
+pyarrow
